@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#burguer-container {
+    display: flex; 
+    position: absolute;
+    flex-direction: column;
+    width: 28px;
+    cursor: pointer;   
+    border: 2px solid #ccc;
+    border-radius: 15%; 
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.burguer-line {
+    width: 28px;
+    height: 4px;
+    background-color: #ccc;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+#burguer-container:hover {
+    border: 2px solid #003399;
+}
+#burguer-container:hover .burguer-line {
+    background-color: #003399;
+}
+
+#main-container {
+    display: flex;
+    width: 100%;
+}
+
+#nav-links {
+    display: table-cell;/*Hidden by default*/ /* Will be shown in responsive design like display:block*/
+    width: 20%;
+    height: 100vh;
+    background-color: #5da5a2;
+    margin-left: -20%;
+}
+
+#nav-links a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.activo{
+    margin-left: 0%;
+    animation-duration: 2s;
+}
+
+.activo2{
+    margin-left: 20%;
+    width: 80%;
+    animation-duration: 2s;
+}
+/*
+@keyframes slidein {
+    from {
+        margin-left: -20%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}*/
+
+#aside-container {
+    display: table-cell;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+}
