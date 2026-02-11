@@ -3,26 +3,466 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>PC Components</title>
         <link rel="stylesheet" href="style.css">        
     </head>
     <body>
-        <nav>
-            <div id="burguer-container">
-                <span class="burguer-line"></span>
-                <span class="burguer-line"></span>
-                <span class="burguer-line"></span>
-            </div>            
+        <!--HEADER PRINCIPAL DE LA PAGINA-->
+        <header id="header-container" class="flex-container">
+            <!--Logo-->
+            <div id="logo-container">
+                <span>Logo</span>
+            </div>
+            <!--Menu hamburguesa-->
+            <div id="burguer-container" class="flex-container">
+                <img class="svg-header" src="img/burger-menu.svg" alt="">
+                <p>Todas las categorias</p>
+            </div>
+            <!--Buscador-->
+            <div id="buscar-container" class="flex-container">
+                <input id="buscador" type="text" placeholder="Buscar...">
+                <button id="btn-buscar"><img id="svg-search" src="img/find-search.svg" alt=""></button>
+            </div>
+            <!--Cuenta-->
+            <div id="cuenta-container" class="flex-container">
+                <img src="img/user.svg" class="svg-header" alt="">
+                <p>Mi Cuenta</p>
+            </div>
+            <!--Cesta-->   
+            <div id="cesta-container" class="flex-container">
+                <img src="img/basket.svg" class="svg-header" alt="">
+                <p>Mi Cesta</p>
+            </div>
+            <!--Menu categorias desplegable-->
+            <div id="menu-categorias" class="flex-container">
+                <div id="equis-container">                        
+                    <button id="btn-close-nav">X</button>
+                </div>                
+                <a href="#" class="item-menu first-elem"><h3>Campañas y ofertas</h3><span>></span></a>  
+                <h4 class="item-title title-items">Categorias</h4>
+                <a href="#" class="item-menu"><img src="img/chip.svg" class="svg-lateral-bar" alt=""><p>Componentes</p><span>></span></a>
+                <a href="#" class="item-menu"><img src="img/pc-case.svg" class="svg-lateral-bar" alt=""><p>Ordenadores</p><span>></span></a>
+                <a href="#" class="item-menu"><img src="img/mouse.svg" class="svg-lateral-bar" alt=""><p>Perifericos</p><span>></span></a>
+                <a href="#" class="item-menu"><img src="img/joystick.svg" class="svg-lateral-bar" alt=""><p>Consolas y videojuegos</p><span>></span></a>
+            </div>
+        </header>
+
+        <!--NAV PRINCIPAL DE LA PAGINA-->
+        <nav id="nav-container" class="flex-container">
+            <a href="#">Ofertas de temporada</a>
+            <a href="#">Concursos</a>
+            <a href="#">Campañas</a>
         </nav>
+
+        <!--MAIN PRINCIPAL DE LA PAGINA-->
         <main id="main-container">
-            <section id="nav-links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-            </section>
-            <aside id="aside-container"></aside>
+            <div id="total" onclick=""></div> 
+            <!--PRIMER ARTICLE DE LA PAGINA-->
+            <article id="first-article" class="flex-container">
+                <h4 class="title-first-article"><span>Expertos en tecnologia</span> con un servicio personalizado</h4>
+                <div id="posters" class="flex-container">
+                    <div class="poster-item">
+                        <a href="#"><img src="img/seleccion-apple.webp" class="img-responsive" alt=""></a>    
+                    </div>
+                    <div class="poster-item">
+                        <a href="#"><img src="img/seleccion-sv.webp" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="poster-item">
+                        <a href="#"><img src="img/top-ofertas.webp" class="img-responsive" alt=""></a>
+                    </div>
+                </div>
+            </article>
+            <!--SEGUNDO ARTICLE DE LA PAGINA--> 
+            <article id="second-article" class="flex-container">
+                <h2 class="title-second-article">¡Consigue las ofertas mas TOP del momento!</h2>
+                <div id="products-carousel-container" class="flex-container">
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item1.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item2.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item3.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item4.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item5.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item6.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item7.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item8.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>  
+            <!--TERCER ARTICLE DE LA PAGINA-->
+            <article id="second-article" class="flex-container">
+                <h2 class="title-second-article">¡Consigue las ofertas mas TOP del momento!</h2>
+                <div id="products-carousel-container" class="flex-container">
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item5.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item6.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item7.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item8.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item4.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item3.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item2.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto-item">
+                        <span class="descuento">-35%</span>
+                        <a href="#"><img src="img/carousel-item1.webp" class="img-responsive" alt=""></a>
+                        <div class="body-producto-item flex-container">
+                            <p class="nombre-producto">Palit GeForce RTX 5080 GamingPro 16GB GDDR7 Reflex 2 RTX AI DLSS4</p>
+                            <p class="precio-producto">1.1990,90€</p>
+                            <p class="rating">4,5/5<img src="img/star.svg" class="svg-star" alt=""> 327 opiniones</p>
+                            <p class="envio-gratis"><img class="svg-free-shipping" src="img/free-shipping.svg" alt="">
+                                <span>Envio gratis.</span> Entrega el martes, 10 de febrero
+                            </p>
+                            <div class="opciones flex-container">
+                                <span class="circulo-color color-1"></span>
+                                <span class="circulo-color color-2"></span>
+                                <span class="circulo-color color-3"></span>
+                                <p>Ver otras opciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>               
         </main>
+        <footer id="footer-container" class="flex-container">
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <h4>Por que comprar</h4>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Garantías</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Tarjetas regalo</a></li>
+                    <li><a href="#">Servicios para empresas</a></li>
+                    <li><a href="#">Compra para empresas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <h4>Por que comprar</h4>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tarjetas regalo</a></li>
+                        <li><a href="#">Servicios para empresas</a></li>
+                        <li><a href="#">Compra para empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <h4>Por que comprar</h4>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tarjetas regalo</a></li>
+                        <li><a href="#">Servicios para empresas</a></li>
+                        <li><a href="#">Compra para empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <h4>Por que comprar</h4>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tarjetas regalo</a></li>
+                        <li><a href="#">Servicios para empresas</a></li>
+                        <li><a href="#">Compra para empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <h4>Por que comprar</h4>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tarjetas regalo</a></li>
+                        <li><a href="#">Servicios para empresas</a></li>
+                        <li><a href="#">Compra para empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column">
+                    <ul class="footer-list">
+                        <h4>Por que comprar</h4>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Tarjetas regalo</a></li>
+                        <li><a href="#">Servicios para empresas</a></li>
+                        <li><a href="#">Compra para empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="javascript.js"></script>
 </html>
